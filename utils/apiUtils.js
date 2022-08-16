@@ -4,6 +4,7 @@ const EXTERNAL_API_URL = process.env.NEXT_PUBLIC_EXTERNAL_API_URL
 
 const GetUsers = async (setData) => {
     try {
+        console.log(INTERNAL_API_URL)
         const res = await fetch(INTERNAL_API_URL,
             {
                 headers: {
