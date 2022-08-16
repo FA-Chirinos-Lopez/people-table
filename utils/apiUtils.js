@@ -1,5 +1,5 @@
-const INTERNAL_API_URL = process.env.NEXT_PUBLIC_EXTERNAL_API_URL
-const EXTERNAL_API_URL = process.env.NEXT_PUBLIC_INTERNAL_API_URL
+const INTERNAL_API_URL = process.env.NEXT_PUBLIC_INTERNAL_API_URL
+const EXTERNAL_API_URL = process.env.NEXT_PUBLIC_EXTERNAL_API_URL
 
 
 const GetUsers = async (setData) => {
