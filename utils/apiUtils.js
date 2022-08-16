@@ -3,14 +3,19 @@ const EXTERNAL_API_URL = process.env.NEXT_PUBLIC_EXTERNAL_API_URL
 
 
 const GetUsers = async (setData) => {
+    try {
+        const res = await fetch(INTERNAL_API_URL)
+        const data = await res.json()
+        setData(data)
+    } catch (err) {
 
-    const res = await fetch(INTERNAL_API_URL)
-    const data = await res.json()
-    setData(data)
+        console.log('error', err);
+        setData([])
+    }
+
     return { Data: data }
-
-
 }
+
 const GetUsersFromPostMan = async (setData) => {
     const res = await fetch(EXTERNAL_API_URL)
     const data = await res.json()
