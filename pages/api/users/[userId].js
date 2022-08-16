@@ -30,9 +30,7 @@ export default async function handler(req, res) {
 
         res.status(200).json(deletedUser)
 
-        //There is an error around here from my point of view it seems like backend and frontend are having an array with same name nut not reference 
-        //when we access the array with a preadded value its going to return always the same even if we push to it
-        // I'd like to know why its happening but I dont have time for now. It would be good to have a backendDev near me 
+
 
     }
 }
