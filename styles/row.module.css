@@ -1,0 +1,21 @@
+.imgBubble {
+    border-radius: 35%;
+}
+
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.inputAndButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addButton {
+    align-self: center;
+    width: 5vw;
+}
