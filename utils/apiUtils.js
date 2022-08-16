@@ -7,13 +7,17 @@ const GetUsers = async (setData) => {
         const res = await fetch(INTERNAL_API_URL)
         const data = await res.json()
         setData(data)
+
+        return { Data: data }
+
     } catch (err) {
 
         console.log('error', err);
         setData([])
+        return { Data: [] }
     }
 
-    return { Data: data }
+
 }
 
 const GetUsersFromPostMan = async (setData) => {
