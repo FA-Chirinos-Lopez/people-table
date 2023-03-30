@@ -2,7 +2,8 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return <>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <head><meta name="apple-mobile-web-app-capable" content="yes" /></head>
+
 
     <Component {...pageProps} />
   </>
