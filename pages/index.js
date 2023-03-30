@@ -47,6 +47,8 @@ export default function Home() {
     //create own table and external table 
     return (
       <div className={styles.mainContainer}>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
         <h2>CopyAndSaveContacts 5.0</h2>
 
         <Table
